@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Prerequisites
 *.d
 
@@ -30,3 +31,8 @@
 *.exe
 *.out
 *.app
+=======
+cmake-build-debug/
+.DS_Store
+.idea
+>>>>>>> baa73a1 (Initial commit)
