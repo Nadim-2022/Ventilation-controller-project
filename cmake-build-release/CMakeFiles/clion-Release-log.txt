@@ -1,0 +1,26 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/amerilain/Documents/ICT_docs/2nd_year/Object_Oriented_Programming/Project/Ventilation-controller-project -B /Users/amerilain/Documents/ICT_docs/2nd_year/Object_Oriented_Programming/Project/Ventilation-controller-project/cmake-build-release
+CMake Error at CMakeLists.txt:5 (include):
+  include could not find requested file:
+
+    /external/pico_sdk_import.cmake
+
+
+-- The C compiler identification is AppleClang 14.0.3.14030022
+-- The CXX compiler identification is AppleClang 14.0.3.14030022
+-- The ASM compiler identification is AppleClang
+-- Found assembler: /Library/Developer/CommandLineTools/usr/bin/cc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error at CMakeLists.txt:16 (pico_sdk_init):
+  Unknown CMake command "pico_sdk_init".
+
+
+-- Configuring incomplete, errors occurred!
