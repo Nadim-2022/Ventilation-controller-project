@@ -58,7 +58,7 @@ int main(){
     display.displayText("Hello World", raspberry26x32);
     display.displayMenu("Menu A", "Menu B");
     display.displayControlPressureLevel(100);
-    //display.displayControlSpeed(50);
+    display.displayControlSpeed(50);
 
     while (true) {
         tight_loop_contents();

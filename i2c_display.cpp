@@ -32,20 +32,20 @@ void I2C_Display::displayMenu(const char *textA, const char *textB) {
     display->text(textB, 0, 40);
     display->show();
 }
-void I2C_Display::displayControlPressureLevel(int pressure) {
-    width = (pressure / 120) * 128;
+void I2C_Display::displayControlPressureLevel(uint16_t pressure) {
+    width = (pressure * 128) /120;
     display->fill(0);
     display->text("Air Pressure: ", 0, 0);
     display->text(std::to_string(pressure).c_str(), 0, 10);
-    display->rect(0, 20,width , 20, 1, true);
+    display->rect(0, 40,width , 20, 1, true);
     display->show();
 }
 
 void I2C_Display::displayControlSpeed(uint16_t speed) {
-    width = (speed / 100) * 128;
+    width = (speed * 128) / 100;
     display->fill(0);
     display->text("Speed: ", 0, 0);
     display->text(std::to_string(speed).c_str(), 0, 10);
-    display->rect(0, 50,width , 20, 1, true);
+    display->rect(0, 40,width , 20, 1, true);
     display->show();
 }

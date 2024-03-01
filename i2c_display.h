@@ -14,13 +14,13 @@ public:
     I2C_Display(uint8_t sda, uint8_t scl, i2c_inst_t *i2c);
     void displayText(const char *text, const uint8_t *raspberry26x32);
     void displayMenu(const char *textA, const char *textB);
-    void displayControlPressureLevel(int pressure);
+    void displayControlPressureLevel(uint16_t pressure);
     void displayControlSpeed(uint16_t speed);
     void displayStatus(const char *status);
 
 
 private:
     std::shared_ptr<ssd1306> display;
-    int width;
+    uint16_t width;
 };
 #endif //PICO_MODBUS_I2C_DISPLAY_H
