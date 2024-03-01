@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.12)
 
 # Include build functions from Pico SDK
-include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
+include(/Users/amerilain/pico/pico-sdk/pico_sdk_init.cmake)
 
 # Set board type because we are building for PicoW
 set(PICO_BOARD pico_w)
@@ -49,6 +49,8 @@ add_executable(${PROJECT_NAME}
         display/mono_vlsb.h
         display/ssd1306.cpp
         display/ssd1306.h
+        interupt_handler.h
+        interupt_handler.cpp
 )
 
 # Create map/bin/hex/uf2 files
